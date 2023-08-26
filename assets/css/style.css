@@ -1,3 +1,4 @@
+
 .intro-content {
     position: relative;
     top: -8rem;
@@ -5,7 +6,7 @@
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -31,6 +32,33 @@
     max-width: 64rem;
     display: flex;
     flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
 }
+
+.beneficios-grid {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.info {
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.grid h3 {
+    font-size: 3rem;
+}
+
