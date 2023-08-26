@@ -62,3 +62,57 @@
     font-size: 3rem;
 }
 
+.contato-titulo-img {
+    display: flex;
+    gap: 1rem;
+}
+
+.contato-form {
+    grid-column: span 2;
+}
+
+.contato-form, .form-grid {
+    border: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap);
+}
+
+.form-group {
+    flex: 1 1 320px;
+}
+
+.form-group  label{
+    display: block;
+}
+
+.form-group input {
+    border: none;
+    background: var(--white-color);
+    padding: 1.5rem 2rem;
+    width: 100%;
+}
+.form-group input:focus {
+    box-shadow: 0 0 5px 5px var(--secondary-color);
+}
+
+.form-group button {
+    border: 0.5rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 2rem;
+    transition: all 300ms ease-in-out;
+}
+
+.form-group button:hover {
+    background: var(--white-color);
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.form-group ::placeholder {
+    color: #b6b6b6;
+    font-weight: bolder;
+}
