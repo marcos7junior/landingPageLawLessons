@@ -23,10 +23,16 @@
     line-height: 1.2;
 }
 
-.intro-img img {
-    max-width: 100%;
+.cover-img img {
+    max-width: 70%;
     height: auto;
 }
+
+.intro-img img {
+    max-width: 70%;
+    height: auto;
+}
+
 
 .top3-content {
     width: 100%;
@@ -57,6 +63,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     min-height: 100vh;
+    margin-top: 2rem;
 }
 
 .grid h3 {
@@ -69,7 +76,9 @@
 }
 
 .contato-form {
-    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap);
 }
 
 .contato-form, .form-grid {
@@ -139,6 +148,25 @@
     border: 0.1rem solid var(--primary-color);
 }
 
+.valor-anterior {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.valor-anterior span{
+    text-decoration: line-through;
+}
+
+.valor-atual {
+    font-size: 5rem;
+    text-align: center;
+
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
 @media (max-width: 800px) {
     .intro-content {
         grid-template-columns: 1fr;
@@ -152,6 +180,11 @@
 
     .grid {
         grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .intro-img img {
+        margin: 0 auto;
     }
 
     .menu {
@@ -203,5 +236,37 @@
         display: none;
     }
 
+    .cover-img img{
+        margin-left: 50px;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+    }
+    h2 {
+        font-size: 2.2rem;
+        text-transform: uppercase;
+    }
+    h3 {
+        font-size: 1.9rem;
+        text-transform: uppercase;
+    }
+    h4 {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+    h5 {
+        font-size: 1.3rem;
+        text-transform: uppercase;
+    }
+    h6 {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
 }
 
