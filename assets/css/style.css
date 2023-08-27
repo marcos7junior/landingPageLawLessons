@@ -185,6 +185,11 @@
         max-width: 80%;
     }
 
+    .beneficios-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
     .intro-img img {
         margin: 0 auto;
     }
@@ -238,12 +243,17 @@
         display: none;
     }
 
-    .cover-img img{
+    .intro-img img, .coach-img img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    .cover-img img {
         margin-left: 50px;
     }
 
     body {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     h1 {
