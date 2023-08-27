@@ -45,10 +45,11 @@
 }
 
 .beneficios-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
     min-height: 100vh;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    margin-top: 2rem;
 }
 
 .info {
