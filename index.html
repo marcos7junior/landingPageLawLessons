@@ -4,7 +4,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -135,13 +134,14 @@
 					</div>
 				</fieldset> -->
 				<div class="form-group">
-					<a onclick="return false;" href="https://pay.hotmart.com/P86187425I?checkoutMode=2" class="hotmart-fb hotmart__button-checkout">Clique aqui e matricule-se agora!</a>
+					<a onclick="return false;" href="https://pay.hotmart.com/P86187425I" class="hotmart-fb hotmart__button-checkout">Clique aqui e matricule-se agora!</a>
+					<!-- <a onclick="return false;" href="https://pay.hotmart.com/P86187425I?checkoutMode=2" class="hotmart-fb hotmart__button-checkout">Clique aqui e matricule-se agora!</a> -->
 				</div>
 				<!-- <img src='https://static.hotmart.com/img/btn-buy-green.png'> -->
 			</div>
 		</div>
 	</section>
-
+	
 	<footer class="white-bg">
 		<p><a rel="nofollow" target="_blank" href="https://github.com/marcos7junior">Desenvolvido por Marcos Paiva</a></p>
 	</footer>
@@ -160,22 +160,6 @@
 			document.head.appendChild(link);	} 
 		 importHotmart(); 
 	 </script> 
-
-	 <script>
-		const comprarBtn = document.querySelector('.hotmart__button-checkout');
-
-		comprarBtn.addEventListener('click', () => {
-		// Simule a compra bem-sucedida (você precisa substituir isso com a lógica da Hotmart)
-		const compraBemSucedida = true;
-
-		if (compraBemSucedida) {
-			// Redirecione para a página após a compra
-			window.location.href = 'pagina-pos-compra.html';
-		}
-		});
-	 </script>
-
-
 </body>
 
 </html>
