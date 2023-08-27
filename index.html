@@ -4,6 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
@@ -23,9 +24,10 @@
 	<label for="close-menu" class="close-menu-label" title="close menu"></label>
 	<aside class="menu white-bg">
 		<div class="main-content menu-content">
+			<h1><a href="#" style="margin-left: 1.65rem">HOME</a></h1>
 			<nav>
 				<ul onclick="getElementById('close-menu').checked = false;">
-					<h1><a href="#" style="margin-left: 1.65rem">HOME</a></h1>
+					
 					<li><a href="#top3">Professores</a></li>
 					<li><a href="#beneficios-grid">Benefícios</a></li>
 					<li><a href="#info">Informações</a></li>
@@ -145,7 +147,7 @@
 	</footer>
 
 	<a href="#" class="back-to-top">🏠</a>
-
+	
 	<script type="text/javascript">
 		function importHotmart(){ 
 			 var imported = document.createElement('script'); 
@@ -158,6 +160,22 @@
 			document.head.appendChild(link);	} 
 		 importHotmart(); 
 	 </script> 
+
+	 <script>
+		const comprarBtn = document.querySelector('.hotmart__button-checkout');
+
+		comprarBtn.addEventListener('click', () => {
+		// Simule a compra bem-sucedida (você precisa substituir isso com a lógica da Hotmart)
+		const compraBemSucedida = true;
+
+		if (compraBemSucedida) {
+			// Redirecione para a página após a compra
+			window.location.href = 'pagina-pos-compra.html';
+		}
+		});
+	 </script>
+
+
 </body>
 
 </html>

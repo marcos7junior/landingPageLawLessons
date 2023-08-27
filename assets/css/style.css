@@ -119,14 +119,15 @@
     font-weight: bolder;
 }
 
+
 .close-menu {
     display: none;
 }
 
 .back-to-top {
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 5rem;
+    right: 1rem;
     background: var(--white-color);
     width: 5rem;
     height: 5rem;
@@ -201,5 +202,6 @@
     .menu-spacing {
         display: none;
     }
+
 }
 
