@@ -51,6 +51,10 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    color: var(--primary-color);
+}
+
 p {
     margin-bottom: 3rem;
 }

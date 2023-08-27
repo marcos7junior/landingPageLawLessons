@@ -18,11 +18,14 @@
 </head>
 
 <body class="main-bg">
+
+	<input id="close-menu" class="close-menu" type="checkbox" aria-label="Close-menu" role="button">
+	<label for="close-menu" class="close-menu-label" title="close menu"></label>
 	<aside class="menu white-bg">
 		<div class="main-content menu-content">
-			<h1><a href="#">HOME</a></h1>
 			<nav>
-				<ul>
+				<ul onclick="getElementById('close-menu').checked = false;">
+					<h1><a href="#" style="margin-left: 1.65rem">HOME</a></h1>
 					<li><a href="#top3">Professores</a></li>
 					<li><a href="#beneficios-grid">Benefícios</a></li>
 					<li><a href="#info">Informações</a></li>
@@ -42,7 +45,7 @@
 					odit est similique obcaecati dicta doloremque molestias adipisci iste maiores, sunt, corrupti pariatur
 					delectus culpa debitis?
 				</p>
-					<img src="./assets/img/logo-PMPB.png" alt="logo pmpb" style="width: 30rem;">
+					<!-- <img src="./assets/img/logo-PMPB.png" alt="logo pmpb" style="width: 30rem;"> -->
 			</div>
 			<div class="intro-img">
 				<img src="./assets/img/remote_study.png" alt="estudante aprovado">
@@ -87,7 +90,6 @@
 					</div>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat quibusdam fugit aperiam sapiente? Incidunt, itaque? Nesciunt voluptas earum tempore illo rerum nemo molestias voluptatum possimus. At voluptate quasi qui! Aspernatur.</p>
 				</article>
-
 			</div>
 		</div>
 	</section>
@@ -111,11 +113,11 @@
 
 	<section id="contato" class="contato main-bg section">
 		<div class="main-content intro-content">
-			<div class="contato-titulo-img">
-				<h2>Matrícula</h2><img src="./assets/img/trophy.png" alt="trofeu de aprovacao">
-			</div>
 			<div class="main-content contato-form">
-				<fieldset class="form-grid">
+				<div class="contato-titulo-img">
+					<h2>Matrícula</h2><img src="./assets/img/trophy.png" alt="trofeu de aprovacao">
+				</div>
+				<!-- <fieldset class="form-grid">
 					<div class="form-group">
 						<label for="full-name">Nome completo</label>
 						<input type="text" name="full-name" id="full-name" placeholder="Nome">
@@ -129,13 +131,33 @@
 						<label for="e-mail">Seu melhor e-mail</label>
 						<input type="text" name="e-mail" id="e-mail" placeholder="E-mail">
 					</div>
-				</fieldset>
+				</fieldset> -->
 				<div class="form-group">
-					<button type="submit">Enviar</button>
+					<a onclick="return false;" href="https://pay.hotmart.com/P86187425I?checkoutMode=2" class="hotmart-fb hotmart__button-checkout">Clique aqui e matricule-se agora!</a>
 				</div>
+				<!-- <img src='https://static.hotmart.com/img/btn-buy-green.png'> -->
 			</div>
 		</div>
 	</section>
+
+	<footer class="white-bg">
+		<p><a rel="nofollow" target="_blank" href="https://github.com/marcos7junior">Desenvolvido por Marcos Paiva</a></p>
+	</footer>
+
+	<a href="#" class="back-to-top">🏠</a>
+
+	<script type="text/javascript">
+		function importHotmart(){ 
+			 var imported = document.createElement('script'); 
+			 imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+			 document.head.appendChild(imported); 
+			var link = document.createElement('link'); 
+			link.rel = 'stylesheet'; 
+			link.type = 'text/css'; 
+			link.href = 'https://static.hotmart.com/css/hotmart-fb.min.css'; 
+			document.head.appendChild(link);	} 
+		 importHotmart(); 
+	 </script> 
 </body>
 
 </html>
