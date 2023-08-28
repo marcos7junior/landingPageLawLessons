@@ -213,6 +213,7 @@
         grid-template-columns: 1fr;
         text-align: center;
         max-width: 80%;
+        margin: 0 auto;
     }
 
     .beneficios-grid {
