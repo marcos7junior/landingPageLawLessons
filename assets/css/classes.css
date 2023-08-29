@@ -17,6 +17,10 @@
     min-height: 100vh;
 }
 
+.section-countdown {
+    min-height: 30vh;
+}
+
 .menu-spacing {
     height: 90px;;
 }
