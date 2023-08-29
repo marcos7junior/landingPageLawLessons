@@ -59,6 +59,30 @@
 		</div>
 	</section>
 
+	<section class="main-bg section-countdown ">
+		<h1 style="text-align: center; font-size: 5rem;">Ainda da tempo!</h1>
+		<div class="main-content countdown">
+			<div class="countdown-item">
+			  <span id="days"></span>
+			  <span>dias</span>
+			</div>
+			<div class="countdown-item">
+			  <span id="hours"></span>
+			  <span>horas</span>
+			</div>
+			<div class="countdown-item">
+			  <span id="minutes"></span>
+			  <span>minutos</span>
+			</div>
+			<div class="countdown-item">
+			  <span id="seconds"></span>
+			  <span>segundos</span>
+			</div>
+		  </div>
+		</div>
+		<p style="text-align: center; font-size: 3rem">Para a prova</p>
+	</section>
+
 	<section id="top3" class="white-bg section">
 		<div class="main-content top3-content">
 			<h2>Professores</h2>
@@ -213,6 +237,27 @@
 			document.head.appendChild(link);
 		}
 		importHotmart(); 
+	</script>
+
+	<script>
+		function updateCountdown() {
+			const targetDate = new Date("2023-10-29T00:00:00").getTime();
+			const currentDate = new Date().getTime();
+			const timeRemaining = targetDate - currentDate;
+		  
+			const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+			const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+			const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+		  
+			document.getElementById("days").textContent = days;
+			document.getElementById("hours").textContent = hours;
+			document.getElementById("minutes").textContent = minutes;
+			document.getElementById("seconds").textContent = seconds;
+		  }
+		  
+		  updateCountdown();
+		  setInterval(updateCountdown, 1000);
 	</script>
 </body>
 
