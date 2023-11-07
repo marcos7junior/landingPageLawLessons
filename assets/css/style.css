@@ -65,7 +65,7 @@
     flex-flow: column wrap;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: center;
+    justify-content: space-evenly;
     min-height: 100vh;
 }
 
@@ -107,7 +107,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     gap: var(--gap);
     min-height: 100vh;
